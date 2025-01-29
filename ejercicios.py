@@ -1,4 +1,4 @@
-def crear_lista():
+def crear_lista4():
     l = []
     longitud = int(input("Digite la longitud de su lista: "))
     while longitud <= 2:
@@ -7,14 +7,35 @@ def crear_lista():
     for i in range(longitud):
         elementos = input(f"Digite su elemento número {i + 1}: ")
         l1 = l.append(elementos)
-    return l 
+    return l
+
+print("-----------------------Programa que evalúa dos o más vocales-----------------------")
+def crear_lista3():
+    l = []
+    longitud = int(input("Digite la longitud de su lista: "))
+    for i in range(longitud):
+        elementos = input(f"Digite su elemento número {i + 1}: ")
+        l.append(elementos)
+    return l
+def contiene_dos_o_mas_vocales(cadena):
+    vocales = "AEIOUaeiou"
+    contador = sum(1 for letra in cadena if letra in vocales)
+    return contador >= 2
+print("-----------------------Programa que evalúa dos o más vocales-----------------------")
+lista_3 = crear_lista3()
+evaluar = [cadena for cadena in lista_3 if contiene_dos_o_mas_vocales(cadena)]
+if evaluar:
+    for cadena in evaluar:
+        print(cadena)
+else: 
+    print("No existe")
 
 print("-----------------------Programa que evalúa si la lista es o no palíndrome-----------------------")
-lista_1 = crear_lista()
-n = len(lista_1)
+lista_4 = crear_lista4()
+n = len(lista_4)
 es_palindrome = True
 for i in range (n): #Se generarán números de 0 hasta el valor de la longitud de la lista
-    if lista_1[i] != lista_1[(len(lista_1) - 1 - i)]: #Se recurre al elemento en la posición indicada por el número i, si este es igual al elemento indicado en la posición n-1-i, es verdadero
+    if lista_4[i] != lista_4[(len(lista_4) - 1 - i)]: #Se recurre al elemento en la posición indicada por el número i, si este es igual al elemento indicado en la posición n-1-i, es verdadero
         es_palindrome = False
         break
 if es_palindrome:
@@ -22,4 +43,4 @@ if es_palindrome:
 elif n <= 2:
     print("Un palíndrome debe tener más de dos elementos")
 else:
-    print(f"Su lista {lista_1} no es palíndrome")
+    print(f"Su lista {lista_4} no es palíndrome")
