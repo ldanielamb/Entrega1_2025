@@ -6,6 +6,10 @@
 ![image](https://github.com/user-attachments/assets/5e758717-89d4-4fec-a003-4487ae5bcb52)
 ![image](https://github.com/user-attachments/assets/94747c2f-6f85-410b-8948-f7d66a51328b)
 ![image](https://github.com/user-attachments/assets/ca0e0555-4b16-45c6-82dc-0233495a05e2)
+#Solución ejercicios
+![Captura de pantalla 2025-01-29 005855](https://github.com/user-attachments/assets/0f8d50cd-30bd-4e4b-bcc3-92af67fa2270)
+
+
 
 
 
