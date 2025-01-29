@@ -21,6 +21,16 @@ def contiene_dos_o_mas_vocales(cadena):
     return contador >= 2
 
 
+print("-----------------------Programa que evalúa si en una lista existen elementos repetidos-----------------------")
+lista_1 = crear_lista3()
+n = len(lista_1)
+y = len(set(lista_1))
+if n != y: 
+    print("La lista tiene elementos repetidos")
+else:
+    print("La lista no tiene elementos repetidos")
+
+
 print("-----------------Programa que evalúa si un elemento es cadena palíndrome-----------------")
 lista_2 = crear_lista3()
 encontrado_palindromo = False
