@@ -18,7 +18,7 @@ def es_palindrome(cadena):
     return cadena == cadena[::-1]
 
 # 1. Programa que evalúa si en una lista existen elementos repetidos
-print("-----------------------Programa que evalúa si en una lista existen elementos repetidos-----------------------")
+print("------------------Programa que evalúa si en una lista existen elementos repetidos------------------")
 lista_1 = crear_lista(longitud_minima=1)
 if len(lista_1) != len(set(lista_1)):
     print("La lista tiene elementos repetidos")
@@ -26,7 +26,7 @@ else:
     print("La lista no tiene elementos repetidos")
 
 # 2. Programa que evalúa si un elemento es cadena palíndromo
-print("-----------------Programa que evalúa si un elemento es cadena palíndrome-----------------")
+print("-----------------Programa que evalúa si un elemento es palíndrome-----------------")
 lista_2 = crear_lista(longitud_minima=1)
 evaluando = False
 for cadena in lista_2:
