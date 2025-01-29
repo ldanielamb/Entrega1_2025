@@ -8,8 +8,6 @@ def crear_lista4():
         elementos = input(f"Digite su elemento número {i + 1}: ")
         l1 = l.append(elementos)
     return l
-
-print("-----------------------Programa que evalúa dos o más vocales-----------------------")
 def crear_lista3():
     l = []
     longitud = int(input("Digite la longitud de su lista: "))
@@ -21,6 +19,19 @@ def contiene_dos_o_mas_vocales(cadena):
     vocales = "AEIOUaeiou"
     contador = sum(1 for letra in cadena if letra in vocales)
     return contador >= 2
+
+
+print("-----------------Programa que evalúa si un elemento es cadena palíndrome-----------------")
+lista_2 = crear_lista3()
+encontrado_palindromo = False
+for cadena in lista_2:
+    if cadena == cadena[::-1]:
+        print(f"'{cadena}' es un palíndromo")
+        encontrado_palindromo = True
+if not encontrado_palindromo:
+    print("No existe")
+
+
 print("-----------------------Programa que evalúa dos o más vocales-----------------------")
 lista_3 = crear_lista3()
 evaluar = [cadena for cadena in lista_3 if contiene_dos_o_mas_vocales(cadena)]
@@ -29,6 +40,7 @@ if evaluar:
         print(cadena)
 else: 
     print("No existe")
+
 
 print("-----------------------Programa que evalúa si la lista es o no palíndrome-----------------------")
 lista_4 = crear_lista4()
